@@ -5,3 +5,136 @@
 @import 'global';
 
 
+.main {
+  &__btn {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 9px 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    line-height: 21px;
+
+    &:hover {
+      color: #000;
+      background-color: violet;
+    }
+  }
+}
+
+.header {
+  background-image: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+    margin-bottom: 110px;
+
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 155px;
+  }
+
+  &__content-col1 {
+    flex: 60%;
+    color: #fff;
+  }
+
+  &__content-subtitle {
+    display: flex;
+    margin-bottom: 19px;
+
+    p {
+      margin-right: 40px;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.15em;
+
+    }
+  }
+
+  &__content-title {
+    font-weight: 600;
+    font-size: 66px;
+    line-height: 70px;
+    letter-spacing: 0.03em;
+    margin-bottom: 17px;
+  }
+
+  &__content-text {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+    max-width: 545px;
+    margin-bottom: 31px;
+  }
+
+  &__content-buttons {
+    margin-bottom: 63px;
+  }
+
+  &__content-btn1 {
+    background: linear-gradient(265.37deg, #9224D6 -49.74%, #BD87DE 116.53%);
+    border: transparent;
+    padding: 13px 30px;
+    margin-right: 8px;
+  }
+
+  &__content-btn2 {
+    padding: 12px 30px;
+  }
+
+  &__content-socialtext {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.13em;
+  }
+
+  &__content-social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-spotyfi {
+    margin-right: 21px;
+  }
+
+  &__social-apple {
+    margin-right: 26px;
+  }
+
+  &__social-youtube {}
+
+  &__content-col2 {}
+
+  &__col2-img {}
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+
+  &__link {
+    margin-right: 50px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+  }
+}

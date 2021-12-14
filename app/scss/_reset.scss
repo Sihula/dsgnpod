@@ -1,11 +1,12 @@
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: inherit;
+  transition: all .3s;
 }
 
 ul[class],
@@ -48,6 +49,6 @@ select {
   font: inherit;
 }
 
-a{
+a {
   text-decoration: none;
 }
