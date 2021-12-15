@@ -114,11 +114,7 @@
     margin-right: 26px;
   }
 
-  &__social-youtube {}
 
-  &__content-col2 {}
-
-  &__col2-img {}
 }
 
 .menu {
@@ -136,5 +132,140 @@
     letter-spacing: 0.02em;
     color: #FFFFFF;
 
+  }
+}
+
+
+// ++++++++++++++++++++EPISODES START++++++++++++++++++
+.episodes {
+  &__top {
+    margin: 100px 0 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top-title {
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 52px;
+    letter-spacing: 0.05em;
+  }
+
+  &__top-link {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #9224D6;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 33px;
+  }
+
+  &__item {
+    max-width: 375px;
+    margin-bottom: 65px;
+  }
+
+  &__item-image {
+    position: relative;
+
+  }
+
+  &__item-img {
+    background-repeat: 10px;
+    margin-bottom: 25px;
+  }
+
+  &__item-rectangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 13px 29px;
+    background-color: rgba(28, 27, 30, 1);
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+  }
+
+  &__item-subtitle {
+    display: flex;
+    column-gap: 25px;
+    margin-bottom: 15px;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+
+      letter-spacing: 0.05em;
+      color: #000000;
+    }
+
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    opacity: .6;
+    margin-bottom: 19px;
+  }
+
+  &__item-play {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__itemplaylink {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #9224D6;
+    padding-left: 33px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      left: 0;
+      background-image: url(../images/episodes/play.png);
+      width: 21px;
+      height: 21px;
+      bottom: 0px;
+    }
+  }
+
+  &__itemplaytime {
+    font-size: 16px;
+    line-height: 24px;
+    opacity: .6;
+    letter-spacing: 0.02em;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      left: -29px;
+      background-image: url(../images/episodes/time.svg);
+      width: 22px;
+      height: 22px;
+    }
   }
 }
