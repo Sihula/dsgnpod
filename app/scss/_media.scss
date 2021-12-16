@@ -1,0 +1,130 @@
+@media (max-width: 1235px) {
+  .episodes__items {
+    justify-content: space-around;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .header__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header__content-col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .meet__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 920px) {
+  .menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: #161353;
+    bottom: -225px;
+    transform: translateY(-200%);
+    transition: all .5s;
+
+    .active {
+      transform: translateY(0%)
+    }
+
+    .nav__link {
+      display: block;
+      padding: 20px 0;
+      font-size: 20px;
+      margin: 0;
+
+    }
+  }
+
+  .menu.active {
+    transform: translateY(0%)
+  }
+
+  .heaedr__btn {
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__content-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .header__content-subtitle p {
+    font-size: 10px;
+    line-height: 15px;
+
+  }
+
+  .header__top {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .mail__inner-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 0 15px;
+  }
+
+  .mail__form-input {
+    max-width: 100%;
+    border: 1px solid rgba(255, 255, 255, .5);
+  }
+}
+
+@media (max-width: 400px) {
+  .header__content-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .header__content-text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .header__content-buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+
+    .header__content-btn1 {
+      margin: 0;
+    }
+  }
+
+  .meet__content-title {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .meet__btn {
+    width: 100%;
+  }
+
+  .episodes__top-title {
+    font-size: 22px;
+  }
+}

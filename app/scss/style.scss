@@ -4,6 +4,32 @@
 @import 'libs';
 @import 'global';
 
+.burger {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  top: 50px;
+  cursor: pointer;
+  display: none;
+
+  &__line-1 {
+    height: 4px;
+    background-color: #fff;
+
+  }
+
+  &__line-2 {
+    height: 4px;
+    background-color: #fff;
+    margin: 10px 0;
+  }
+
+  &__line-3 {
+    height: 4px;
+    background-color: #fff;
+  }
+}
 
 .main {
   &__btn {
@@ -36,7 +62,7 @@
     align-items: center;
     padding: 45px 0;
     margin-bottom: 110px;
-
+    position: relative;
   }
 
   &__content {
@@ -121,6 +147,7 @@
 .menu {
   display: flex;
   align-items: center;
+
 }
 
 .nav {
@@ -143,6 +170,7 @@
     margin: 100px 0 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__top-title {
@@ -436,14 +464,17 @@
     padding-bottom: 17px;
     margin-bottom: 45px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    ;
+    flex-wrap: wrap;
   }
 
   &__inner-col1 {
     max-width: 380px;
   }
 
-  &__inner-logo {}
+
+  .footer__inner-social {
+    margin-bottom: 20px;
+  }
 
   &__inner-text {
     margin-top: 18px;
@@ -463,12 +494,14 @@
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.02em;
+    margin-bottom: 20px;
   }
 
   &__inner-col2 {
     display: flex;
     justify-content: space-between;
     column-gap: 150px;
+    flex-wrap: wrap;
   }
 
   &__col2-item {
@@ -505,10 +538,11 @@
   &__copy {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 26px;
     opacity: .7;
   }
 
-  &__copy-text {}
-
 }
+
+@import 'media';

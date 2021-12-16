@@ -9,3 +9,9 @@ $(function () {
   });
 
 });
+const hamburger = document.querySelector('.burger');
+const navLink = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+  navLink.classList.toggle('active');
+});
